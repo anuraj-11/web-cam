@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>WebCam</title>
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+  <style>
+
+    #preview {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+  </style>
+
+
+</head>
+<body class="bg-dark">
+
+<div class="container mt-5 ">
+  <h1 class="text-center  text-white mb-4">Webcam Recorder</h1>
+
+  <div class="text-center mt">
+    <button class="btn btn-outline-warning" id="startBtn">Start Recording</button>
+    <button class="btn btn-outline-danger" id="stopBtn" disabled>Stop Recording</button>
+    <br>
+    <button class="btn btn-outline-success d-none mt-4" id="downloadBtn">Download Recorded Video</button>
+  </div>
+
+  <div class="mt-4 d-flex justify-content-center">
+    <video id="preview" class="img-fluid" autoplay playsinline></video>
+  </div>
+</div>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>
